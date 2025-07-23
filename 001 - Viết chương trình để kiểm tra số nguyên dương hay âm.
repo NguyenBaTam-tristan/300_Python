@@ -1,0 +1,16 @@
+def check_number(n):
+    if n > 0:
+        return f'{n} là nguyên dương'
+    elif n < 0:
+        return f'{n} là nguyên âm'
+    else:
+        return f'{n} không nguyên dương hay âm'
+
+try:
+    number = int(input('nhập một số nguyên: '))
+    result = check_number(number)
+    print(result)
+except ValueError:
+    print('vui lòng nhập một số nguyên hợp lệ')
+
+

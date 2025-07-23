@@ -1,0 +1,21 @@
+def odd_even(n):
+    if n%2 == 0:
+        return f'{n} is even'
+    else:
+        return f'{n} is odd'
+try:
+    number = int(input('Nhập một số nguyên:'))
+    result = odd_even(number)
+    print(result)
+except ValueError:
+    print('Vui lòng nhập số nguyên hợp lệ')
+
+#PHIÊN BẢN NÂNG CẤP:
+def odd_even(n):
+    return f'{n} is odd' if n%2==1 else f'{n} is even' # toán tử 3 ngôi
+try:
+    number = int(input('Nhập một số nguyên:').strip()) # strip giúp vô tình ấn dấu cách ko bị lỗi
+    result = odd_even(number)
+    print(result)
+except ValueError:
+    print('Vui lòng nhập số nguyên hợp lệ')

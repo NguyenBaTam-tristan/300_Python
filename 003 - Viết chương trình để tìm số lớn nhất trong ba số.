@@ -1,0 +1,27 @@
+# ĐƠN GIẢN NHẤT, HÀM CHO SẴN CỦA PYTHON, TÌM SỐ LỚN NHẤT TRONG DÃY KHÔNG GIỚI HẠN SỐ:
+def biggest_number(nums):
+    max_nums=max(nums)
+    return max_nums
+try:
+    n = list(map(int, input('Các số cần điền:').strip().split()))
+    max_number = biggest_number(n)
+    print(f'số lớn nhất trong các số là: {max_number}')
+
+except ValueError:
+    print('vui lòng nhập số hợp lệ')
+# CÁCH KHÁC:
+def biggest_number(nums):
+    if not nums:
+        return None
+    max_num=nums[0]
+    for num in nums:
+        if num > max_num:
+            max_num=num
+    return max_num
+try:
+    nums = list(map(int, input('Các số cần điền:').strip().split()))
+    max_number = biggest_number(nums)
+    print(f'số lớn nhất trong các số là: {max_number}')
+
+except ValueError:
+    print('vui lòng nhập số hợp lệ')

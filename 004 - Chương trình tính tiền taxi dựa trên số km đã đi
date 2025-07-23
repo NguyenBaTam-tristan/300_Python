@@ -1,0 +1,17 @@
+def taxi_price(km):
+    if 0<= km <= 1 :
+        price = 10000 * km
+    elif 2<=km<=10:
+        price = 10000 + 8500 * (km-1)
+    else:
+        price = 10000 + 8500 * 9 + 7500 * (km-10)
+    return price
+try:
+    distance = float(input('Số km đã đi:'))
+    if distance < 0:
+        print('số km không hợp lệ vui lòng nhập số dương')
+    else:
+        total_price = taxi_price(distance)
+        print(f'The taxi price is: {total_price} VND')
+except ValueError:
+    print('vui lòng nhập số hợp lệ')

@@ -1,0 +1,13 @@
+def is_leap_year(n):
+    if (n%4==0 and n%100!=0) or (n%400==0):
+        return 'Năm nhuận'
+    return 'Năm thường'
+try:
+    year = int(input('Điền năm:'))
+    if year < 0:
+        print('Điền năm là số dương')
+    else:
+        check = is_leap_year(year)
+        print(check)
+except ValueError:
+    print('vui lòng nhập số nguyên hợp lệ') 

@@ -1,0 +1,17 @@
+def count_odd_even(nums):
+    odds=0
+    evens=0
+    for num in nums:
+        if num%2==0:
+            evens+=1
+        else:
+            odds+=1
+    return odds, evens
+try:
+    input_list = list(map(int,input('Điền số:').split()))
+    even_count, odd_count = count_odd_even(input_list)
+    print(f'Số lượng số chẵn:{even_count}')
+    print(f'Số lượng số lẻ là:{odd_count}')    
+except ValueError:
+    print('Vui lòng nhập các số nguyên hợp lệ')
+            

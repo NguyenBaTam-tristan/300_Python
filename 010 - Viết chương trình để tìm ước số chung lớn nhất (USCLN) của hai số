@@ -1,0 +1,11 @@
+def gcd(a,b):
+    while b!=0:
+        a,b=b,a%b
+    return a
+try:
+    num1=int(input('điền số thứ nhất:'))
+    num2=int(input('điền số thứ hai:'))
+    ucln=gcd(num1,num2)
+    print(f' ước chung lớn nhất của {num1} và {num2} là {ucln}')
+except ValueError:
+    print('Điền số hợp lệ') 

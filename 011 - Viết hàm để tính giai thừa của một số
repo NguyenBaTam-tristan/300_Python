@@ -1,0 +1,15 @@
+def giai_thua(n):
+    if n < 0:
+        return f'số âm không thích hợp'
+    ket_qua = 1
+    for i in range(1, n+1):
+        ket_qua *= i
+    return ket_qua
+try:
+    number = int(input('Điền số :'))
+    if number < 0:
+        print(f'{number} không hợp lệ.')
+    else:
+        print(f'Giai thừa của {number} là {giai_thua(number)}')
+except ValueError:
+    print('Điền số hợp lệ')

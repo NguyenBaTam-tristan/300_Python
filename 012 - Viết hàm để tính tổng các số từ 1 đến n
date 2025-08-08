@@ -1,0 +1,13 @@
+def t(n):
+    if n < 0:
+        return f'Số âm không hợp'
+    else:
+        return (n*(n+1))/2
+try:
+    number = int(input('Điền số:'))
+    if number < 0:
+        print (f'{number} không thỏa mãn')
+    else:
+        print (f'Tổng là {t(number)}')
+except ValueError:
+    print ('Điền số thỏa mãn')

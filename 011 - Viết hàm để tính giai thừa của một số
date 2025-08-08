@@ -1,3 +1,4 @@
+CÁCH 1: Sử dụng vòng lặp
 def giai_thua(n):
     if n < 0:
         return f'số âm không thích hợp'
@@ -11,5 +12,21 @@ try:
         print(f'{number} không hợp lệ.')
     else:
         print(f'Giai thừa của {number} là {giai_thua(number)}')
+except ValueError:
+    print('Điền số hợp lệ')
+CÁCH 2: ĐỆ QUY
+def gt(n):
+    if n < 0:
+        return f'Số âm không hợp'
+    elif n==0 or n==1:
+        return 1
+    elif n > 1:
+        return n * gt(n-1)
+try:
+    number = int(input('Điền số :'))
+    if number < 0:
+        print(f'{number} không hợp lệ.')
+    else:
+        print(f'Giai thừa của {number} là {gt(number)}')
 except ValueError:
     print('Điền số hợp lệ')

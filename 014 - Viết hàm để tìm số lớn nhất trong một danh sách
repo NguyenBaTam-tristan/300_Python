@@ -1,0 +1,18 @@
+def find_max(numbers):
+    if not numbers:
+        return f'Không hợp lệ'
+    else:
+        biggest_num = numbers[0]
+        for num in numbers:
+            if num > biggest_num:
+                biggest_num = num
+        return biggest_num
+try:
+    numbers = list(map(int,input('Điền số:').split())) #bước 1: viết code input điền số
+    if not numbers:
+        print('Không hợp lệ')
+    else:
+        max_num=find_max(numbers)
+        print(f'Số lớn nhất là:{max_num}')
+except ValueError:
+    print('vui lòng nhập các số hợp lệ')

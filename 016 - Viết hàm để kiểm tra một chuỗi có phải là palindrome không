@@ -1,0 +1,10 @@
+def is_palindrome(s):
+    for char in s:
+        if char.isalnum():
+            s=''.join(char.lower())
+    return s == s[::-1]
+input_string = input('Nhập một chuỗi: ')
+if is_palindrome(input_string):
+    print(f'{input_string} is palindrome')
+else:
+    print(f'{input_string} is not palindrome')

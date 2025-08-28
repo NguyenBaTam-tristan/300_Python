@@ -1,0 +1,15 @@
+import math
+def chu_vi(r):
+    return 2 * math.pi * r
+def dt(r):
+    return math.pi * r**2
+try:
+    radius=float(input('Điền bán kính:'))
+    if radius < 0:
+        print('Bán kính không hợp lệ')
+    else:
+        circ = chu_vi(radius)
+        ar = dt(radius)
+        print(f'Diện tích và chu vi là {ar:.2f} và {circ:.2f}')
+except ValueError:
+    print('Điền số hợp lệ')

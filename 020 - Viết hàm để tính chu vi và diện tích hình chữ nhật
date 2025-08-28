@@ -1,0 +1,15 @@
+def rectangle_perimeter(l, w):
+    return (l+w)*2
+def rectangle_area(l, w):
+    return l*w
+try:
+    length=float(input('Nhập chiều dài:'))
+    width=float(input('Nhập chiều rộng:'))
+    if length < 0 or width < 0 or length < width:
+        print('Điền số hợp lệ')
+    else:
+        per = rectangle_perimeter(length, width)
+        ar = rectangle_area(length, width)
+        print(f'Chu vi và diện tích là {per} và {ar}')
+except ValueError:
+    print('Điền số hợp lệ')

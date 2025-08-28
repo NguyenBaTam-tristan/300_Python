@@ -1,0 +1,8 @@
+def C_to_F(C):
+    return (C * 9/5) + 32
+try:
+    c = float(input('Nhập độ C: '))
+    f = C_to_F(c)
+    print(f'{c} độ C là {f} độ F')
+except ValueError:
+    print('Điền số hợp lệ')

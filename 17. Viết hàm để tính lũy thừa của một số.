@@ -1,0 +1,14 @@
+def luy_thua(a,b):
+    ket_qua = 1
+    for _ in range(abs(b)):
+        ket_qua *= a
+        
+    if b < 0:
+        ket_qua = 1 / ket_qua
+    return ket_qua
+try:
+    base = int(input('Enter base: '))
+    exponent = int(input('Enter exponent: '))
+    print (f'{base} ^ {exponent} = {luy_thua(base, exponent)}')
+except ValueError:
+    print('Điến số hợp lệ')

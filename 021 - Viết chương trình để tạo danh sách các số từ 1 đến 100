@@ -1,0 +1,5 @@
+numbers = list(range(1,101))
+print(numbers)
+HOẶC:
+for i in numbers:
+  print(i)

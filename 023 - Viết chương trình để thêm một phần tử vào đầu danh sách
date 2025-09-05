@@ -1,0 +1,7 @@
+#Khởi tạo danh sách ban đầu
+my_lst = [1,2,3,4]
+#Điền phần tử
+new_num=int(input('Điền số: '))
+#Thêm phần tử đầu
+my_lst.insert(0, new_num)
+print('Danh sách sau khi thêm phần tử vào đầu:', my_lst)

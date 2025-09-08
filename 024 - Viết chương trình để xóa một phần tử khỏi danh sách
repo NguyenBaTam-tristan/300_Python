@@ -1,0 +1,12 @@
+my_lst = [1,2,3,4,5]
+removed=input('Nhập số xóa:')
+try:
+    removed=int(removed)
+except ValueError:
+    try:
+        removed=float(removed)
+    except ValueError:
+        pass
+if removed in my_lst:
+    my_lst.remove(removed)
+    print('My list after removed:',my_lst)

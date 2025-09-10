@@ -1,0 +1,13 @@
+# Cách 1
+def find_max():
+    my_lst = [float(x) for x in (input('Nhập các số: ').split())]
+    max_num = my_lst[0]
+    for num in my_lst:
+        if num > max_num:
+            max_num = num
+    return max_num
+print('Max number is ', find_max())
+# Cách 2
+my_list = [1,2,3]
+max_num = max(my_list)
+print('Max number is', max_num)

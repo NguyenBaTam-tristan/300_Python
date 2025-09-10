@@ -1,0 +1,6 @@
+import random
+my_list = [1,2,3,4,5,6,8,9]
+random.shuffle(my_list)
+print('Random list',my_list)
+my_list.sort(reverse=True)
+print('Sorted list',my_list)

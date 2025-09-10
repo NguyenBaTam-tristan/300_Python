@@ -1,0 +1,5 @@
+def sorted_list():
+    my_list = [float(x) for x in input('Enter numbers').split()]
+    my_list.sort()
+    return my_list
+print('List after being sorted: ', sorted_list())

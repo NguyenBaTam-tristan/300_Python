@@ -1,0 +1,4 @@
+import random
+my_list = [random.randint(1,100) for _ in range (10)]
+total_sum = sum(my_list)
+print(total_sum)

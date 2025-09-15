@@ -1,0 +1,23 @@
+CÁCH 1:
+def count_num():
+    count = 0
+    my_list = [int(x) for x in input('Enter list: ').split()]
+    count_num = int(input('Enter number: '))
+    for num in my_list:
+            if num == count_num:
+                count += 1
+    return count
+print(count_num())
+CÁCH 2:
+my_list = [1,2,3,4,5,1]
+print('Your list: ', my_list)
+count_num = input('Enter number:')
+try:
+    count_num = int(count_num)
+except ValueError:
+    try:
+        count_num = float(count_num)
+    except ValueError:
+        pass
+count = my_list.count(count_num)
+print(f'{count_num} xuất hiện {count} lần' )

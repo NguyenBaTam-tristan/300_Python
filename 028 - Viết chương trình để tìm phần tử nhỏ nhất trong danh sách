@@ -1,0 +1,14 @@
+CÁCH 1:
+def find_min():
+    my_list=[float(x) for x in input('Enter list: ').split()]
+    min_num = my_list[0]
+    for num in my_list:
+        if num < min_num:
+            return num == min_num
+    return min_num
+print(find_min())
+CÁCH 2:
+my_list = [1,2,3]
+min_element = min(my_list)
+print(min_element)
+        

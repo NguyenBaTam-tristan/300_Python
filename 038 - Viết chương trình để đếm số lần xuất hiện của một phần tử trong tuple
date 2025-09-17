@@ -1,0 +1,12 @@
+my_tuple = (10,20,30,40,50,60)
+print('Tuple :', my_tuple)
+element = input('Enter num: ')
+try:
+    element = int(element)
+except ValueError:
+    try:
+        element = float(element)
+    except ValueError:
+        pass
+count = my_tuple.count(element)
+print(f'Phần tử {element} xuất hiện {count} lần.')

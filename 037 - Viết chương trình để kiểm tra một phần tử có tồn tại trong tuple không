@@ -1,0 +1,14 @@
+t = (10,20,30,35,40,45,50,55,60)
+print('Tuple đã tạo:',t)
+element = input('Enter element: ')
+try:
+    element = int(element)
+except ValueError:
+    try:
+        element = float(element)
+    except ValueError:
+        pass
+if element in t:
+    print(f'{element} exists ')
+else:
+    print(f'{element} doesnt exist ')

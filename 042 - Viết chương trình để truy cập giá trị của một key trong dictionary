@@ -1,0 +1,13 @@
+my_dict_2 = {
+    'name' : 'Tâm',
+    'city' : 'Hà Nội',
+    'school' : 'FPTU'
+}
+print('Dictionary đã tạo: ',my_dict_2)
+
+key = input('Enter key: ')
+if key in my_dict_2:
+    value = my_dict_2[key]
+    print(f'Gía trị của {key} là {value}')
+else:
+    print(f'{key} không tồn tại trong dictionary')

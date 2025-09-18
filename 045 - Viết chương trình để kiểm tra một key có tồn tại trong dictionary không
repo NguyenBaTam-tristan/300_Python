@@ -1,0 +1,7 @@
+dict1 = {'name':'Tâm','job':'AI engineer','hobby':'gym'}
+print(dict1)
+key_to_check = input('Enter key to check: ')
+if key_to_check in dict1:
+    print(f'Tồn tại cặp key-value có key là {key_to_check}, value là {dict1[key_to_check]}')
+else:
+    print(f'{key_to_check} không tồn tại trong dict')

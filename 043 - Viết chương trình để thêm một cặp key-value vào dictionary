@@ -1,0 +1,8 @@
+my_dict = {
+    'name' : 'Tâm',
+    'major' : 'AI' 
+}
+new_key = input('Enter key: ')
+new_value = input('Enter value: ')
+my_dict[new_key] = new_value
+print('Dictionary sau khi thêm: ', my_dict)

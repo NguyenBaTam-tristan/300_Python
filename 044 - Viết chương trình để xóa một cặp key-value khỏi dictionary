@@ -1,9 +1,10 @@
-dict = {'name':'Tâm','job':'AI engineer','hobby':'gym'}
-print(dict)
+dict1 = {'name':'Tâm','job':'AI engineer','hobby':'gym'}
+print(dict1)
 key_to_delete = input('Enter key to delete: ')
-if key_to_delete in dict:
-    dict.pop(key_to_delete)
-    print(f'Đã xóa cặp key-value có key là {key_to_delete}')
+value = dict1.pop(key_to_delete, None)
+if value is not None:
+    print(f'Đã xóa cặp key-value có key là {key_to_delete}, value là {value}')
 else:
     print(f'{key_to_delete} không tồn tại trong dict')
-print(f'Dictionary sau khi xóa {key_to_delete} là {dict}')
+print(f'Dictionary sau khi xóa {key_to_delete} là {dict1}')
+

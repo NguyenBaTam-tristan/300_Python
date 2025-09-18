@@ -1,0 +1,14 @@
+CÁCH 1: Gọi dict rỗng {}, dùng cú pháp my_dict['key'] = 'value'
+my_dict = {}
+my_dict['name'] = 'Tâm'
+my_dict['city'] = 'Ninh Bình'
+my_dict['born year'] = 2025
+print('Dictionary đã tạo: ',my_dict)
+
+CÁCH 2: my_dict = { 'key' : 'value' }
+my_dict_2 = {
+    'name' : 'Tâm',
+    'city' : 'Hà Nội',
+    'school' : 'FPTU'
+}
+print('Dictionary đã tạo: ',my_dict_2)

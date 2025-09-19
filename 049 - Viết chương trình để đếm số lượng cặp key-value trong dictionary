@@ -1,0 +1,10 @@
+my_dict = {'name':'Tristan','job':'CEO','assets':10000000,'sport':'tennis'}
+print('Dictionary đã tạo:',my_dict)
+count1 = len(my_dict)
+print('Amount of key-value way 1: ', count1)
+count2 = len(my_dict.items())
+print('Amount of key_value way 2: ', count2)
+count3 = 0
+for _ in my_dict:
+    count3 += 1
+print('Amount of key_value way 3: ', count3)

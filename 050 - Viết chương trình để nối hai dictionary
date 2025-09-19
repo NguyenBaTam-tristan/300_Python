@@ -1,0 +1,9 @@
+dict1 = {'name':'Tristan','job':'CEO','assets':10000000,'sport':'tennis'}
+dict2 = {'school':'FPTU', 'pet':'dog'}
+#Cách nối 1: Dùng update()
+dict3=dict1.copy()
+dict3.update(dict2)
+print('New dictonary:', dict3)
+#Cách nối 2: Dùng **
+dict4={**dict1,**dict2}
+print('New dictionary 2:', dict4)

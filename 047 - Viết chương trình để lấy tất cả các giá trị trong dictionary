@@ -1,0 +1,4 @@
+my_dict = {'name':'Tristan','job':'CEO','assets':10000000}
+print('Dictionary đã tạo:',my_dict)
+values = my_dict.values()
+print('All values of my dictionary:', list(values))

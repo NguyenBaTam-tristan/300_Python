@@ -1,0 +1,8 @@
+my_set = {'MAE','MAD','PFP','CSI'}
+print('Set được tạo là: ',my_set)
+#Thêm phần tử vào set bằng phương thức add()
+my_set.add('SSL101c')
+print('Set được thêm phần tử bằng phương thức add() là: ', my_set)
+#Thêm phần tử vào set bằng phương thức update()
+my_set.update(['MAS'])
+print('Set được thêm phần tử bằng phương thức update() là: ', my_set)

@@ -1,0 +1,7 @@
+my_set = {'MAE','MAD','PFP','CSI'}
+print('Set được tạo là: ',my_set)
+item_to_check = input('Enter item to check: ')
+if item_to_check not in my_set:
+    print('Not in set')
+else:
+    print('In set')

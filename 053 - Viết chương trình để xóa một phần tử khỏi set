@@ -1,0 +1,12 @@
+my_set = {'MAE','MAD','PFP','CSI'}
+print('Set được tạo là: ',my_set)
+item_to_delete = input('Enter item to delete: ')
+if item_to_delete not in my_set:
+    print('Not in set')
+else:
+    #Xóa phần tử vào set bằng phương thức remove()
+    my_set.remove(item_to_delete)
+    print('Set được xóa phần tử bằng phương thức remove() là: ', my_set)
+    #Xóa phần tử vào set bằng phương thức discard()
+    my_set.discard(item_to_delete)
+    print('Set được xóa phần tử bằng phương thức discard() là: ', my_set)

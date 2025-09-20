@@ -1,0 +1,6 @@
+#CÁCH 1:
+set1 = {'MAE','MAD','PFP','CSI'}
+print('Set được tạo bởi {} là',set1)
+#CÁCH 2:
+set2 = set(['biceps','triceps','chest'])
+print('Set được tạo bởi set() là',set2)

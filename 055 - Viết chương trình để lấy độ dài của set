@@ -1,0 +1,4 @@
+my_set = {'MAE','MAD','PFP','CSI'}
+print('Set được tạo là: ',my_set)
+length_set = len(my_set)
+print('Length of set:',length_set)

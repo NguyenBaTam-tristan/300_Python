@@ -1,5 +1,12 @@
+#CÁCH 1: XÓA BẰNG CLEAR
 set1 = {'red','blue','green'}
 print('Set 1:', set1)
-#Xóa hết pần tử tron set bằng clear()
+#Xóa hết pần tử tronG set bằng clear()
 set1.clear()
 print('Sau khi xóa hết set:', set1)
+#CÁCH 2: XÓA BẰNG REMOVE()
+set2 = {'black','white'}
+print('Set 2:', set2)
+for items in list(set2):
+    set2.remove(items)
+print('Sau khi xóa hết set:', set2)

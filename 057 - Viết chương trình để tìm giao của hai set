@@ -3,4 +3,4 @@ set2 = {'white', 'black', 'green'}
 print('Set 1:', set1)
 print('Set 2:', set2)
 set_intersection = set1 & set2
-print('Hợp của hai set:', set_intersection)
+print('Giao của hai set:', set_intersection)

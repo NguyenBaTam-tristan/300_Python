@@ -1,0 +1,6 @@
+set1 = {'red','blue','green'}
+set2 = {'white', 'black', 'green'}
+print('Set 1:', set1)
+print('Set 2:', set2)
+set_difference = set1 - set2
+print('Bù của hai set:', set_difference)

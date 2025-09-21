@@ -1,0 +1,12 @@
+#CÁCH 1 : BIẾN LIST THÀNH SET BẰNG SET()
+list1 = ['red','blue','green']
+print('List1:', list1)
+set1 = set(list1)
+print('Chuyển thành set:', set1)
+#CÁCH 2: BIẾN LIST THÀNH SET BẰNG ADD()
+list2 = [1,2,3]
+print('List2:',list2)
+set2 = set()
+for items in list2:
+    set2.add(items)
+print('Chuyển thành set:', set2)

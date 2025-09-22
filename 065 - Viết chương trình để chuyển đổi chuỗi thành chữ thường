@@ -1,0 +1,6 @@
+#Nhập vào một chuỗi:
+input_str = 'TÂM BÁ'
+print('Chuỗi đầu vào là:', input_str)
+#Chuyển thành chữ thường:
+lower_str = input_str.lower()
+print('Chuỗi in hoa là:', lower_str)

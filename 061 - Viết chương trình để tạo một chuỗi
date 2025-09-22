@@ -1,0 +1,17 @@
+#Tạo một chuỗi
+str1 = 'Hello World'
+print(str1)
+#Chuỗi nhiều dòng
+str2 = ''' Hello,
+World '''
+#Chuyển đổi đối tượng thành chuỗi
+num = 123
+str3 = str(num)       
+#Nối chuỗi
+str4 = 'Hello' + 'World'
+#f-string
+name = 'World'
+str5 = f'Hello, {name}'
+#Dùng format
+name = 'World'
+str6 = 'Hello, {}'.format(name)

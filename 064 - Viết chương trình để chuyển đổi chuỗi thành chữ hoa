@@ -1,0 +1,6 @@
+#Nhập vào một chuỗi:
+input_str = 'tâm bá'
+print('Chuỗi đầu vào là:', input_str)
+#Chuyển thành chữ hoa:
+upper_str = input_str.upper()
+print('Chuỗi in hoa là:', upper_str)

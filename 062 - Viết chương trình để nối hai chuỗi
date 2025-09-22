@@ -1,0 +1,14 @@
+#Tạo và nối hai chuỗi:
+str1 = 'Bá '
+str2 = 'Tâm'
+str3 = str1 + str2
+print('Nối toán tử +:',str3)
+#Dùng join
+str4 = ''.join([str1,str2])       
+print('Nối bằng join:',str4)        
+#f-string
+str5 = f'{str1}{str2}'
+print('Nối bằng f-string:',str5)
+#Dùng format()
+str6 = '{}{}'.format(str1,str2)
+print('Nối bằng format:', str6)

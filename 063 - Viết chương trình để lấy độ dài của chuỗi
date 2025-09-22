@@ -1,0 +1,9 @@
+#Dùng len()
+str1 = 'Nguyễn Bá Tâm'
+length1 = len(str1)
+print('Tính độ dài dùng len():',length1)
+#Dùng for
+length2 = 0
+for char in str1:
+    length2 += 1 
+print('Tính độ dài dùng for:', length2)

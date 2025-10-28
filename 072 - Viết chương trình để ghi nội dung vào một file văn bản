@@ -1,0 +1,16 @@
+xfile = open('facebook.txt','w',encoding = 'utf-8')
+content = 'CHEST PRESS'
+xfile.write(content)
+print(xfile)
+xfile.close()
+'''
+file_path = 'facebook.txt'
+content = 'HELLO WORLD'
+try:
+    with open(file_path, 'w', encoding = 'utf-8') as file:
+        file.write(content)
+        print(f'Nội dung được ghi lại vào file: {file_path}')
+except FileNotFoundError:
+    print(f'Không tìm thấy file: {file_path}')
+except Exception as e:
+    print(f'Đã xảy ra lỗi: {e}')

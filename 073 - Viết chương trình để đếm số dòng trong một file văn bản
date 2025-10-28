@@ -1,0 +1,18 @@
+'''
+try:
+    with open('news.txt','r', encoding = 'utf-8') as file:
+        count_l = 0
+        for l in file:
+            count_l += 1
+        print(f'Số lượng dòng trong file: {count_l}')
+except FileNotFoundError:
+    print(f'Không tìm thấy file: {news,txt}')
+'''
+f = 'news.txt'
+try:
+    with open(f, 'r', encoding = 'utf-8') as file:
+        lines = file.readlines()
+        print(f'Số lượng dòng trong file: ',len(lines))
+    
+except FileNoFoundError:
+    print(f'Không tìm thấy file: {news.txt}')

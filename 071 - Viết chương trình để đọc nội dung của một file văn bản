@@ -1,0 +1,19 @@
+'''
+xfile = open('facebook.txt','r',encoding = 'utf-8')
+content = xfile.read()
+print(content)
+xfile.close()
+'''
+
+
+
+file_path = 'facebook.txt'
+try:
+    with open(file_path, 'r', encoding = 'utf-8') as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print(f'Không tìm thấy file : {file_path}')
+except Exception as e:
+    print(f'Đã xảy ra lỗi : {e}')
+    

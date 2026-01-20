@@ -1,1 +1,1 @@
-# 300_Python
+#  300 BÀI CODE PYTHON THIẾU NHI
